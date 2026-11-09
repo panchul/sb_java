@@ -41,5 +41,5 @@ From this folder:
 
 ## Run the app
 ```bash
-mvn -B -q -pl app -am exec:java
+./scripts/run.sh
 ```
