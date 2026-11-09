@@ -4,15 +4,50 @@ A beginner-friendly Java sandbox repository organized by core programming topics
 
 ## Prerequisites
 
-- **JDK 17+** (11+ also works for these examples)
+- **JDK 17+** (11+ also works for most basic examples)
 - A terminal/command prompt
 - Optional IDE: IntelliJ IDEA, VS Code (Java extensions), or Eclipse
+- **Maven 3.9+** (required for `app_using_maven`)
+- **Gradle** (optional for `app_using_gradle` because Gradle Wrapper is included)
 
 Check your Java installation:
 
 ```bash
 java -version
 javac -version
+```
+
+Check Maven and Gradle:
+
+```bash
+mvn -version
+gradle -version
+```
+
+If Gradle is not installed globally, that is fine for `app_using_gradle`; use:
+
+```bash
+cd app_using_gradle
+./gradlew -version
+```
+
+## Installing Maven and Gradle
+
+Installers depend on your OS and package manager. Common options:
+
+- **macOS (Homebrew)**  
+  `brew install maven gradle`
+- **Ubuntu/Debian**  
+  `sudo apt update && sudo apt install -y maven gradle`
+- **Windows (winget)**  
+  `winget install Apache.Maven`  
+  `winget install Gradle.Gradle`
+
+After installation, re-run:
+
+```bash
+mvn -version
+gradle -version
 ```
 
 ## Setup
@@ -41,6 +76,8 @@ javac -version
 - `file_io` – read/write files with modern APIs
 - `multithreading` – thread basics and synchronization
 - `client_server` – networking with sockets
+- `app_using_maven` – production-style multi-module Maven application
+- `app_using_gradle` – production-style multi-module Gradle application
 
 ## Learning path for beginners
 

@@ -1,0 +1,2 @@
+rootProject.name = 'app-using-gradle'
+include 'common', 'pricing', 'app'
